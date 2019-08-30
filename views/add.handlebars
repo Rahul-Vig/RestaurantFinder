@@ -1,0 +1,83 @@
+<link rel="stylesheet" href="css/add.css">
+
+<div class="container text-center mt-5">
+
+    <form>
+        <hr>
+        <h1>Restaurant Details</h1>
+        <hr>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="rest_x">Restaurant X Coordinate</label>
+                <input type="number" min="0" max="100" class="form-control" id="rest_x"
+                    placeholder="X coordinate (Eg. 1)" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="rest_y">Restaurant Y Coordinate</label>
+                <input type="number" min="0" max="100" class="form-control" id="rest_y"
+                    placeholder="Y coordinate (Eg. 1)" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="rest_name">Restaurant Name</label>
+            <input type="text" class="form-control" id="rest_name" placeholder="Enter Restaurant Name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="rest_name">Restaurant Phone Number</label>
+            <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="form-control" id="rest_name"
+                placeholder="Enter Restaurant Phone Number" required>
+        </div>
+        <div class="form-group">
+            <label for="rest_desc">Restaurant Description</label>
+            <input type="text" class="form-control" id="rest_desc" placeholder="Enter description for the restaurant"
+                required>
+        </div>
+        <div class="form-group">
+            <label for="rest-category">Restaurant Category</label>
+            <input type="text" class="form-control" id="rest-category"
+                placeholder="Enter category: eg. Fast Food, Chinese, Indian...">
+        </div>
+        <div class="form-group">
+            <label for="hours">Restaurant Hours</label>
+            <input type="text" class="form-control" id="hours" placeholder="Enter Hours (Eg. 9am-5pm)" required>
+        </div>
+        <div class="form-group">
+            <label for="days-open">Days Restaurant Open</label>
+            <input type="text" class="form-control" id="days-open" placeholder="Enter Days Open (Eg. Mon-Fri)" required>
+        </div>
+        <hr>
+        <h1>Menu Details</h1>
+        <hr>
+        <div class="menu-items">
+
+            <div class="form-group">
+                <label for="type_res1">Menu Type</label>
+                <input type="text" class="form-control" id="type_res1" placeholder="Eg. Breakfast, Lunch, Dinner"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="item_name1">Item Name</label>
+                <input type="text" class="form-control" id="item_name1" placeholder="Eg. Greek Salad, Burrito, etc..."
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="item_desc1">Item Description</label>
+                <input type="text" class="form-control" id="item_desc1"
+                    placeholder="Description of Item, Include allergies, ingredients etc..." required>
+            </div>
+            <div class="form-group">
+                <label for="item_price1">Item Price</label>
+                <input type="text" class="form-control" id="item_price1" placeholder="Eg. 9.99, 10.59" required>
+            </div>
+
+        </div>
+        <button type="button" onclick="addMenuItem()" class="btn btn-primary">Add Menu Item</button>
+        <hr>
+        <button type="submit" onclick="addRestaurant()" class="btn btn-primary">Add Restaurant</button>
+    </form>
+
+
+</div>
+
+<script src="/js/add.js"></script>

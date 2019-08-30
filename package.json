@@ -1,0 +1,28 @@
+{
+  "name": "restaurant-finder",
+  "version": "1.0.0",
+  "description": "A web app that allows both client and admin access. Client access allows users to find restaurants by name or distance. Admin access allows users to create, modify, or delete any restaurant. All restaurants are fictitious to avoid any copyright or licensing issues.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rahul-Vig/RestaurantFinder.git"
+  },
+  "author": "Rahul Vig",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rahul-Vig/RestaurantFinder/issues"
+  },
+  "homepage": "https://github.com/Rahul-Vig/RestaurantFinder#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "mysql": "^2.17.1",
+    "mysql2": "^1.6.5",
+    "sequelize": "^5.8.5",
+    "sequelize-cli": "^5.4.0"
+  }
+}

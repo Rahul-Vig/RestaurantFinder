@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="css/add.css">
+
+<div class="container text-center mt-5">
+
+    <form>
+        <hr>
+        <h1>Franchise Details</h1>
+        <hr>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="rest_x">Franchise X Coordinate</label>
+                <input type="number" min="0" max="100" class="form-control" id="rest_x"
+                    placeholder="X coordinate (Eg. 1)" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="rest_y">Franchise Y Coordinate</label>
+                <input type="number" min="0" max="100" class="form-control" id="rest_y"
+                    placeholder="Y coordinate (Eg. 1)" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="rest_name">Franchise Name</label>
+            <input type="text" class="form-control" id="rest_name" placeholder="Enter Restaurant Name" required>
+        </div>
+        <div class="form-group">
+            <label for="rest_name">Franchise Phone Number</label>
+            <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="form-control" id="rest_name"
+                placeholder="Enter Restaurant Phone Number" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Add Franchise</button>
+    </form>
+
+
+</div>
+
+<script src="/js/add.js"></script>

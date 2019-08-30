@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface");
+
+body {
+  background: url("/images/clientBG.jpg");
+  font-family: "Abril Fatface", cursive;
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron {
+  text-align: center;
+  background: rgba(10, 10, 10, 0.596);
+  font-style: bold;
+  color: rgb(255, 255, 255);
+  min-height: 1200px;
+}
+
+.header {
+  color: rgb(255, 255, 255);
+  margin-top: 6%;
+}
+
+.dropdown {
+}
+
+.dropdown-menu {
+  text-shadow: none;
+}
